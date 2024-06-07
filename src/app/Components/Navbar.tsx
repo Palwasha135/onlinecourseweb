@@ -36,13 +36,9 @@ export default function Header() {
                 </Link>
               </li>
              
+             
               <li className="border-b border-transparent ml-10 hover:text-[#ff3300ee]  text-black font-Poppins  font-bold text-2xl rounded hover:underline underline-offset-8 decoration-2 ">
-                <Link  href="/services" onClick={closeNav}>
-                  Services
-                </Link>
-              </li>
-              <li className="border-b border-transparent ml-10 hover:text-[#ff3300ee]  text-black font-Poppins  font-bold text-2xl rounded hover:underline underline-offset-8 decoration-2 ">
-                <Link  href="/our-courses" onClick={closeNav}>
+                <Link  href="/Courses" onClick={closeNav}>
                   Courses
                 </Link>
               </li>
@@ -51,8 +47,13 @@ export default function Header() {
                   About
                 </Link>
               </li>
+               <li className="border-b border-transparent ml-10 hover:text-[#ff3300ee]  text-black font-Poppins  font-bold text-2xl rounded hover:underline underline-offset-8 decoration-2 ">
+                <Link  href="/Contact" onClick={closeNav}>
+                  Contact
+                </Link>
+              </li>
             </ul>
-            <div onClick={handleNav} className="md:hidden text-black">
+            <div onClick={handleNav} className="md:hidden  text-black">
               <AiOutlineMenu size="20" />
             </div>
           </div>
@@ -69,32 +70,32 @@ export default function Header() {
           <div
             className={`${
               nav
-                ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ff3300ee]  p-10 ease-in duration-500 "
+                ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-gradient-to-r from-red-800 to-red-500  p-10 ease-in duration-500 "
                 : "fixed left-[-100%] top-0 p-10 ease-in duration-500 "
             }`}
           >
             <div className="flex  ">
               <div className=" flex flex-col">
                 <ul className="">
-                  <li className="py-4 text-black hover:text-white ">
+                  <li className="py-4 text-white hover:text-black ">
                     <Link  href="/" onClick={closeNav}>
                       Home
                     </Link>
                   </li>
-                  <li className="py-4 text-black hover:text-white ">
+                  <li className="py-4 4 text-white hover:text-black ">
                     {" "}
+                    <Link  href="/Courses" onClick={closeNav}>
+                    Courses
+                    </Link>
+                  </li>
+                  <li className="py-4 4 text-white hover:text-black ">
                     <Link  href="/about-us" onClick={closeNav}>
                       About
                     </Link>
                   </li>
-                  <li className="py-4 text-black hover:text-white ">
-                    <Link  href="/our-courses" onClick={closeNav}>
-                      Courses
-                    </Link>
-                  </li>
-                  <li className="py-4 text-black hover:text-white ">
-                    <Link  href="/services" onClick={closeNav}>
-                      Services
+                  <li className="py-4 4 text-white hover:text-black ">
+                    <Link  href="/Contact" onClick={closeNav}>
+                      Contact
                     </Link>
                   </li>
                 </ul>
@@ -102,7 +103,7 @@ export default function Header() {
               <div className="absolute top-0 right-0">
                 <div
                   onClick={handleNav}
-                  className="rounded-full shadow-lg shadow-gray-400 p-3 m-5 cursor-pointer text-black"
+                  className="rounded-full shadow-lg bg-white shadow-gray-700 hover:bg-black  hover:text-white p-3 m-5 cursor-pointer text-black"
                 >
                   <AiOutlineClose />
                 </div>

@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { SquarePlay } from 'lucide-react';
-import { Globe } from 'lucide-react';
+
 
 
 const Section = () => {
@@ -22,7 +21,7 @@ const Section = () => {
             <h1 className="mr-2 text-xl text-white ">Why Choose</h1>
             <Image src="/images/logo2.PNG" alt="Logo" width={100} height={100} />
           </div>
-          <h1 className="title-font sm:text-4xl text-3xl mb-6 font-Poppins font-medium text-white">
+          <h1 className="title-font md:text-4xl text-2xl mb-6 font-Poppins font-medium text-white">
           Develop Your <span className='text-[#ff3300ee]'>Skills,</span> Learn Something <span className='text-[#ff3300ee]'>New,</span> and<span className='text-[#ff3300ee]'> Grow</span>  Your Skills From Anywhere in the 
          
          <span className='text-[#ff3300ee]'>World!</span> 

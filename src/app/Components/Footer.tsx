@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function App() {
   return (
     <footer
-      className="bg-gradient-to-b from-stone-900 to to-black  text-center border border-t-white text-white   lg:text-left">
+      className=" overflow-hidden bg-gradient-to-b from-stone-900 to to-black  text-center border border-t-white text-white   lg:text-left">
       {/*  Main container div: holds the entire content of the footer, including four sections (TW Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins.  */}
       <div className="mx-6 py-10 text-center md:text-left">
         <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -97,12 +97,12 @@ export default function App() {
             </p>
           </div>
            {/*  Soial icons section  */}
-          <div className="">
+          <div className="  mx-auto">
             <h6
               className="mb-4 flex justify-center  font-semibold uppercase md:justify-start">
               Follow Us
             </h6>
-             <div className="flex justify-center items-center mr-40 ">
+             <div className="flex justify-center items-center mx-auto ">
           <a className="mr-6 text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
